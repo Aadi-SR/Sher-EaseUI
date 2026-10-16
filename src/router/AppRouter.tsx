@@ -53,7 +53,9 @@ const AppRouter = ({}: Props) => {
         },
       ],
     },
-  ]);
+  ], {
+    basename: import.meta.env.BASE_URL,
+  });
 
   return <RouterProvider router={router} />;
 };
